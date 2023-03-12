@@ -375,7 +375,7 @@ mouse-1: Previous buffer\nmouse-3: Next buffer"
              (doom-modeline-display-icon icon)
            (doom-modeline-propertize-icon
             icon
-            (doom-modeline-face)))
+            (doom-modeline-face 'doom-modeline-buffer-major-mode)))
          (doom-modeline-vspc))))))
 
 (defsubst doom-modeline--buffer-state-icon ()
